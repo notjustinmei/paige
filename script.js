@@ -70,6 +70,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
+  event.target.setPlaybackQuality('large');
   handleScroll();
 }
 
