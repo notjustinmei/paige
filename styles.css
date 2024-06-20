@@ -15,6 +15,20 @@ html {
   overflow-x: hidden;
 }
 
+.navigation {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
 .slide {
   min-height: 100vh;
   width: 100vw;

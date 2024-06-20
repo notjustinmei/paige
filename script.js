@@ -22,6 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setCurrentIndex();
   });
 
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlide(currentIndex);
+  });
+
   let startY;
   container.addEventListener('touchstart', (e) => {
     startY = e.touches[0].clientY;
